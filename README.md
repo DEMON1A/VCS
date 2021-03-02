@@ -42,35 +42,12 @@ Command Injection With OS/exec
 
 - The Second Thing Here is That You Need Create a Function Inside Your Python Code Called `vScan()` and It Should Take One Argument Called: `filePath`. When Calling Your Module From The Modules Folder. The Main Script is Calling It With The filePath The User Provided To Scan. To Aviod These Weird Stuff. I Wrote a Simple Template You Can Find On `/templates/module.py`. Go and See The Modules I Made To Get an Idea
 
-```python
-'''
-:import any python module you want.
-'''
-
-detectVariables = [
-    '',
-    ''
-]
-
-blockedVariables = ['']
-linesCount = 0
-
-from utils.showIssue import showIssue
-
-def vScan(filePath):
-    global linesCount
-
-    fileLines = open(filePath , 'r').readlines()
-    for singleLine in fileLines:
-        linesCount += 1
-        singleLine = singleLine.rstrip('\n')
-
-        '''
-        your scan code here
-        '''
-
-    linesCount = 0
-```
+## What's New?
+- PHP Modules Support
+- Variables Trakcer To Detect Varibles Used On Insecure Functions
+- Advanced SQL Injection Scanner With More Ways To Detect It.
+- More Utils To Use Inside Your Code That Includes Variables Tracker, stringName Finder, ..etc
+- Faster Scans With More Threading!
 
 ## Found This Tool Helpful? :heartbeat:
 - Giving it a Star :star: Will Be Great. And I Will Be Really Thankful For That. 

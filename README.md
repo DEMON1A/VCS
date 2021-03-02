@@ -11,7 +11,7 @@
 -f , --file: a Single File That Contains The Code You Want To Scan
 -d , --dir: a Hall Folder That Contains The Code You Want To Scan
 -l , --language: The Language The Code Written In and There's a Tool Module For It
--x, --exclude: Exclude a Scan Script -- Comming Soon --
+-x , --exclude: Exclude a Scan Script -- Comming Soon --
 ```
 - For Basic Usage. Just Use This Commnand:
 ```

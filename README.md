@@ -67,4 +67,4 @@ Command Injection With OS/exec
 - PHP GET/POST Parameters Usage Detector Based On Regex.
 
 ### Found VCS Helpful? :heartbeat:
-- Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available for public** :heart: 
+- Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available to public** :heart: 

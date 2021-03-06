@@ -41,6 +41,11 @@ Command Injection With OS/exec
 - It Will Be More Scans Soon. We Still Need To Write More Modules.
 - **Most** Of VCS Scans Only Applies For Python Codes. Other Modules For Other Languages Will Be There Soon.
 
+## What Languages VCS Can Scan?
+![python](https://github.com/abranhe/programming-languages-logos/blob/master/src/python/python_32x32.png?raw=true)
+![php](https://github.com/abranhe/programming-languages-logos/blob/master/src/php/php_32x32.png?raw=true)
+![ruby](https://github.com/abranhe/programming-languages-logos/blob/master/src/ruby/ruby_32x32.png?raw=true)
+
 ## Did VCS Found a Real Issue Before Huh? :yawning_face:
 - Yeah It Did, I Was Able To Find Arbitrary Code Execution On SimBA After Manually Checking VCS Hits. VCS Did Point That There's an Insecure YAML desearilization Happens On Code Using Unsafe Loader.
 

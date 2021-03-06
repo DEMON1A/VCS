@@ -1,6 +1,17 @@
 # vulnerableCodeScanner (VCS) :dizzy:
 - a Static Code Vulnerability Scanner Works On Analyzing The Code Lines To Find Insecure Functions And Supports External Scanning Modules.
 
+Table of Contents
+=================
+
+- [What's VCS?](#whats-vcs-thinking)
+- [How To Use VCS?](#how-to-use-vcs-confused)
+- [What Issues VCS is Scanning?](#what-vulnerabilities-vcs-is-scanning-confused)
+- [Did VCS Found a Real Issue Before?](#did-vcs-found-a-real-issue-before-huh-yawning_face)
+- [Writing Your Own VCS Module](#writing-your-own-vcs-module-open_mouth)
+- [What's New?](#whats-new)
+- [Support VCS](#found-this-tool-helpful-heartbeat)
+
 ## What's VCS? :thinking:
 - VCS is a Simple Code-Analysis Tool Works On Scanning Every Single Line Of Code On Files And Compare The Code Functions With Vulnerable Cases Using Both **( String Comparing And ReGex )**. Then Show The Issue/Injection-Point To The User With Cool Logging System. It Also Supports External Scan Modules Written In Python. You're Able To Right Your Own Scanning Module And You're Free To Use All Python Modules Inside Of It. 
 
@@ -33,8 +44,6 @@ Command Injection With OS/exec
 ## Did VCS Found a Real Issue Before Huh? :yawning_face:
 - Yeah It Did, I Was Able To Find Arbitrary Code Execution On SimBA After Manually Checking VCS Hits. VCS Did Point That There's an Insecure YAML desearilization Happens On Code Using Unsafe Loader.
 
-![result](https://i.imgur.com/vqPDbe0.png)
-
 ### References:
 - https://github.com/418sec/huntr/pull/1959
 
@@ -43,12 +52,15 @@ Command Injection With OS/exec
 
 - The Second Thing Here is That You Need Create a Function Inside Your Python Code Called `vScan()` and It Should Take One Argument Called: `filePath`. When Calling Your Module From The Modules Folder. The Main Script is Calling It With The filePath The User Provided To Scan. To Aviod These Weird Stuff. I Wrote a Simple Template You Can Find On `/templates/module.py`. Go and See The Modules I Made To Get an Idea
 
+- By Now, VCS Does Support Modules Written On PHP. All You Have Todo is Using The PHP Template On The `/templates/` Folder.
+
 ## What's New?
 - PHP Modules Support
 - Variables Trakcer To Detect Varibles Used On Insecure Functions
 - Advanced SQL Injection Scanner With More Ways To Detect It.
 - More Utils To Use Inside Your Code That Includes Variables Tracker, stringName Finder, ..etc
 - Faster Scans With More Threading!
+- PHP GET/POST Parameters Usage Detector Based On Regex.
 
 ## Found This Tool Helpful? :heartbeat:
 - Giving it a Star :star: Will Be Great. And I Will Be Really Thankful For That. 

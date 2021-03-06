@@ -66,5 +66,5 @@ Command Injection With OS/exec
 - Faster Scans With More Threading!
 - PHP GET/POST Parameters Usage Detector Based On Regex.
 
-## Found This Tool Helpful? :heartbeat:
+### Found VCS Helpful? :heartbeat:
 - Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available for public** :heart: 

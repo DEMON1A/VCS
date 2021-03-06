@@ -56,7 +56,7 @@ Command Injection With OS/exec
 
 ## What's New?
 - PHP Modules Support
-- Variables Trakcer To Detect Varibles Used On Insecure Functions
+- Variables Tracker To Detect Varaibles Used On Insecure Functions
 - Advanced SQL Injection Scanner With More Ways To Detect It.
 - More Utils To Use Inside Your Code That Includes Variables Tracker, stringName Finder, ..etc
 - Faster Scans With More Threading!

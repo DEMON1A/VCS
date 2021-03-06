@@ -39,7 +39,7 @@ Command Injection With OS/exec
 ```
 
 - It Will Be More Scans Soon. We Still Need To Write More Modules.
-- All Of VCS Scans Only Applies For Python Codes. Other Modules For Other Languages Will Be There Soon.
+- **Most** Of VCS Scans Only Applies For Python Codes. Other Modules For Other Languages Will Be There Soon.
 
 ## Did VCS Found a Real Issue Before Huh? :yawning_face:
 - Yeah It Did, I Was Able To Find Arbitrary Code Execution On SimBA After Manually Checking VCS Hits. VCS Did Point That There's an Insecure YAML desearilization Happens On Code Using Unsafe Loader.
@@ -63,4 +63,4 @@ Command Injection With OS/exec
 - PHP GET/POST Parameters Usage Detector Based On Regex.
 
 ## Found This Tool Helpful? :heartbeat:
-- Giving it a Star :star: Will Be Great. And I Will Be Really Thankful For That. 
+- Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available for public** :heart: 

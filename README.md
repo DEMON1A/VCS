@@ -7,6 +7,7 @@ Table of Contents
 - [What's VCS?](#whats-vcs-thinking)
 - [How To Use VCS?](#how-to-use-vcs-confused)
 - [What Issues VCS is Scanning?](#what-vulnerabilities-vcs-is-scanning-confused)
+- [What Languages VCS Can Scan?](#what-languages-vcs-can-scan-no_mouth)
 - [Did VCS Found a Real Issue Before?](#did-vcs-found-a-real-issue-before-huh-yawning_face)
 - [Writing Your Own VCS Module](#writing-your-own-vcs-module-open_mouth)
 - [What's New?](#whats-new)
@@ -37,9 +38,7 @@ Flask Enabled Debug Mode
 Sqlite3 SQL Injection
 Command Injection With OS/exec
 ```
-
 - It Will Be More Scans Soon. We Still Need To Write More Modules.
-- **Most** Of VCS Scans Only Applies For Python Codes. Other Modules For Other Languages Will Be There Soon.
 
 ## What Languages VCS Can Scan? :no_mouth:
 ![python](https://github.com/abranhe/programming-languages-logos/blob/master/src/python/python_32x32.png?raw=true)

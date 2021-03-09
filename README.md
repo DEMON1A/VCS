@@ -82,6 +82,7 @@ python3 vCode.py -f code.py
 - Hardcoded Secrets Finder In PHP Based On String Compare.
 - Nodejs Insecure Unserlization That Leads To Code Injection. Based On ReGex.
 - Nodejs stringFinder Util That Could Be Used To Track functionsObjects.
+- Nodejs Inseucre Unserlization Detector On funcster Based On ReGex.
 
 ### Found VCS Helpful? :heartbeat:
 - Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available to public** :heart: 

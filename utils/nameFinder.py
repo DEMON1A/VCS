@@ -13,3 +13,10 @@ def nameStringFinder(reGexResults):
 
     nameString = reGexResults.replace('(' , '').replace(')' , '')
     return nameString
+
+def nodejsStringFinder(reGexResults):
+    reGexResults = reGexResults.replace('var ' , '')
+    reGexResults = reGexResults.split('=')[0]
+    reGexResults = reGexResults.strip()
+
+    return reGexResults

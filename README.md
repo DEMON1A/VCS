@@ -69,6 +69,7 @@ Command Injection With OS/exec
 - Insecure Yaml Deserialization Detector For Ruby Based On Regex.
 - Hardcoded Secrets Finder In PHP Based On String Compare.
 - Nodejs Insecure Unserlization That Leads To Code Injection. Based On ReGex.
+- Nodejs stringFinder Util That Could Be Used To Track functionsObjects.
 
 ### Found VCS Helpful? :heartbeat:
 - Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available to public** :heart: 

@@ -47,7 +47,8 @@ python3 vCode.py -f code.py
 - Hardcoded Secrets **[high]**
 
 #### Nodejs:
-- Insecure Unserlization **[high]**
+- Insecure Unserlization - (node-serialization) **[high]**
+- Insecure Unserlization - (funcster) **[high]**
 - Hardcoded Secrets **[high]**
 
 

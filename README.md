@@ -65,6 +65,7 @@ Command Injection With OS/exec
 - More Utils To Use Inside Your Code That Includes Variables Tracker, stringName Finder, ..etc
 - Faster Scans With More Threading!
 - PHP GET/POST Parameters Usage Detector Based On Regex.
+- Insecure Yaml Deserialization Detector For Ruby Based On Regex.
 
 ### Found VCS Helpful? :heartbeat:
 - Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available to public** :heart: 

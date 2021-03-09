@@ -7,6 +7,7 @@ $issuesFound = False;
 
 $filePath = $argv[1];
 $fileLines = fopen($filePath , "r");
+$messageStart = "";
 
 $secretsList = array(
     "GITHUB_TOKEN",
@@ -34,7 +35,9 @@ while (( !feof($fileLines) )) {
 
     foreach ( $secretsList as $secret => $secretItem ){
         if ( strpos($parsedString, $secretItem) !== false ) {
-            showIssue("info" , $linesCount , $line , "Possible Hardcoded Secrets On The Code.");
+            if ($issuesFound) {$messageStart = "\n";}
+
+            showIssue($messageStart . "info" , $linesCount , $line , "Possible Hardcoded Secrets On The Code.");
             $issuesFound = true;
         }
     }

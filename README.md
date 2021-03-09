@@ -31,14 +31,21 @@ python3 vCode.py -f code.py
 ```
 
 ## What Vulnerabilities VCS is Scanning? :confused:
-- in The Current Time. VCS is Scanning Only The Following Issues
-```
-Insecure YAML desearilization
-Flask Enabled Debug Mode
-Sqlite3 SQL Injection
-Command Injection With OS/exec
-```
-- It Will Be More Scans Soon. We Still Need To Write More Modules.
+### Python:
+- Insecure YAML desearilization **[high]**
+- Flask Enabled Debug Mode **[medium]**
+- Sqlite3 SQL Injection **[high]**
+- Command Injection With OS/exec **[high]**
+
+### PHP:
+- GET/POST Parameters Usage **[DEBUG/INFO]**
+
+### Ruby:
+- Insecure YAML desearilization **[high]**
+
+### Nodejs:
+- Insecure Unserlization **[high]**
+
 
 ## What Languages VCS Can Scan? :no_mouth:
 ![python](https://github.com/abranhe/programming-languages-logos/blob/master/src/python/python_32x32.png?raw=true)

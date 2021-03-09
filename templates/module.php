@@ -10,6 +10,7 @@ $fileLines = fopen($filePath , "r");
 
 while (( !feof($fileLines) )) {
     $line = fgets($fileLines);
+    $line = preg_replace('~[\r\n]+~', '', $line);
     $linesCount++;
 
     /*

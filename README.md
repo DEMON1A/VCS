@@ -15,6 +15,7 @@ Table of Contents
 - [Did VCS Found a Real Issue Before?](#did-vcs-found-a-real-issue-before-huh-yawning_face)
 - [Writing Your Own VCS Module](#writing-your-own-vcs-module-open_mouth)
 - [What's New?](#whats-new)
+- [Security](#security)
 - [Support VCS](#found-this-tool-helpful-heartbeat)
 
 ## What's VCS? :thinking:
@@ -89,6 +90,11 @@ python3 vCode.py -f code.py
 - Nodejs stringFinder Util That Could Be Used To Track functionsObjects.
 - Nodejs Inseucre Unserlization Detector On funcster Based On ReGex.
 - XML Parsing DoS Detector For Python Based On Both String Comparing and ReGex.
+
+## Security
+- You're responsible for the files inside your disk. code injections is possible if an attacker is able to add a malicious python/php file inside your modules folder. we can't do anything to avoid that since this's how the program is working. otherwise. VCS is using a secure functions and multiple layers of validation befoe doing anything important. and all of the tests inside the tests folder is meant to be vulnerable so VCS users can test the modules and see that they're working.
+
+- If you believe you found a security issue on VCS feel free to contact me via the contact information on my github account. or you can open an issue on github with it.
 
 ### Found VCS Helpful? :heartbeat:
 - Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available to public** :heart: 

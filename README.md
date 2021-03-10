@@ -40,6 +40,7 @@ python3 vCode.py -f code.py
 - Flask Enabled Debug Mode **[medium]**
 - Sqlite3 SQL Injection **[high]**
 - Command Injection With OS/exec **[high]**
+- XML Parsing Denial Of Service **[high]**
 - Hardcoded Secrets **[high]**
 
 #### PHP:
@@ -87,6 +88,7 @@ python3 vCode.py -f code.py
 - Nodejs Insecure Unserlization That Leads To Code Injection. Based On ReGex.
 - Nodejs stringFinder Util That Could Be Used To Track functionsObjects.
 - Nodejs Inseucre Unserlization Detector On funcster Based On ReGex.
+- XML Parsing DoS Detector For Python Based On Both String Comparing and ReGex.
 
 ### Found VCS Helpful? :heartbeat:
 - Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available to public** :heart: 

@@ -1,20 +1,27 @@
+'''
+Serverity: info
+Description: Python Command Execution Detector
+Author: We All Created It <3.
+'''
+
+'''
+..*\.(system)\(.*\)
+'''
+
+import re
+
 detectVariables = [
     'import os',
-    'os.system',
-    'os.spawn',
-    'os.popen',
-    'from os import system',
-    'from os import popen',
-    'from os import spawn',
-    'exec('
+    'from os import'
 ]
 
 linesCount = 0
+systemImported = False
 
 from utils.showIssue import showIssue
 
 def vScan(filePath):
-    global linesCount
+    global linesCount, systemImported
 
     fileLines = open(filePath , 'r').readlines()
 
@@ -24,18 +31,24 @@ def vScan(filePath):
 
         for dVariable in detectVariables:
             if dVariable in singleLine:
-                if "'" not in singleLine and '"' not in singleLine and "import" not in singleLine:
-                    showIssue(Serverity="high" , lineCount=linesCount , Line=singleLine , Message="OS/exec is used on this script with user controlled input" , filePath=filePath)
-                elif "+" in singleLine:
-                    inputVariables = singleLine.split('+')
-                    for singleInput in inputVariables:
-                        if "'" not in singleInput and '"' not in singleInput:
-                            showIssue(Serverity="high" , lineCount=linesCount , Line=singleLine , Message="OS/exec is used on this script with user controlled input" , filePath=filePath)
-                        else:
-                            pass
-                else:
-                    showIssue(Serverity="info" , lineCount=linesCount , Line=singleLine , Message="OS/exec is used on this python script." , filePath=filePath)
+                systemImported = True
+                showIssue(Serverity="info" , lineCount=linesCount , Line=singleLine , Message="Python OS is used on the code" , filePath=filePath)
             else:
                 pass
+
+        if systemImported:
+            systemUsed = re.match(r"..*\.(system)\(.*\)" , singleLine)
+            if systemUsed != None:
+                if "'" and '"' not in systemUsed.group():
+                    showIssue(Serverity="high" , lineCount=linesCount , Line=singleLine , Message="Python OS is used with a user controlled variable" , filePath=filePath)
+                else:
+                    showIssue(Serverity="info" , lineCount=linesCount , Line=singleLine , Message="Python OD is used on the code" , filePath=filePath)
+
+        execFinder = re.match(r".*exec\(.*\)" , singleLine)
+        if execFinder != None:
+            if "'" and '"' not in execFinder.group():
+                showIssue(Serverity="high" , lineCount=linesCount , Line=singleLine , Message="Python exec is used with a user controlled variable" , filePath=filePath)
+            else:
+                showIssue(Serverity="info" , lineCount=linesCount , Line=singleLine , Message="Python exec is used on the code" , filePath=filePath)
 
     linesCount = 0

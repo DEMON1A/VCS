@@ -52,3 +52,4 @@ def vScan(filePath):
                 showIssue(Serverity="info" , lineCount=linesCount , Line=singleLine , Message="Python exec is used on the code" , filePath=filePath)
 
     linesCount = 0
+    systemImported = False

@@ -13,6 +13,7 @@ Table of Contents
     * [Nodejs](#nodejs)
 - [What Languages VCS Can Scan?](#what-languages-vcs-can-scan-no_mouth)
 - [Did VCS Found a Real Issue Before?](#did-vcs-found-a-real-issue-before-huh-yawning_face)
+    * [References](#references)
 - [Writing Your Own VCS Module](#writing-your-own-vcs-module-open_mouth)
 - [What's New?](#whats-new)
 - [Security](#security)

@@ -42,6 +42,7 @@ python3 vCode.py -f code.py
 - Sqlite3 SQL Injection **[high]**
 - Command Injection With OS/exec **[high]**
 - XML Parsing Denial Of Service **[high]**
+- Django XSS With Safe Enabled **[high]**
 - Hardcoded Secrets **[high]**
 
 #### PHP:
@@ -90,6 +91,7 @@ python3 vCode.py -f code.py
 - Nodejs stringFinder Util That Could Be Used To Track functionsObjects.
 - Nodejs Inseucre Unserlization Detector On funcster Based On ReGex.
 - XML Parsing DoS Detector For Python Based On Both String Comparing and ReGex.
+- Django Possible XSS Detector When Safe is Used On The Template Based On ReGex.
 
 ## Security
 - You're responsible for the files inside your disk. code injections is possible if an attacker is able to add a malicious python/php file inside your modules folder. we can't do anything to avoid that since this's how the program is working. otherwise. VCS is using a secure functions and multiple layers of validation befoe doing anything important. and all of the tests inside the tests folder is meant to be vulnerable so VCS users can test the modules and see that they're working.

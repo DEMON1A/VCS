@@ -52,6 +52,7 @@ python3 vCode.py -f code.py
 
 #### Ruby:
 - Insecure YAML desearilization **[high]**
+- Ruby Open File Remote Code Execution **[high]**
 - Hardcoded Secrets **[high]**
 
 #### Nodejs:
@@ -94,6 +95,7 @@ python3 vCode.py -f code.py
 - XML Parsing DoS Detector For Python Based On Both String Comparing and ReGex.
 - Django Possible XSS Detector When Safe is Used On The Template Based On ReGex.
 - Faster Command Execution Scan With Less Invalid Results Based On Both String Comparing and ReGex.
+- Ruby Kernal File Open Remote Code Execution Based On Both String Comparing and ReGex.
 
 ## Security
 - You're responsible for the files inside your disk. code injections are possible if an attacker is able to add a malicious python/php file inside your modules folder. we can't do anything to avoid that since this's how the program is working. otherwise. VCS is using a secure functions and multiple layers of validation befoe doing anything important. and all of the tests inside the tests folder is meant to be vulnerable so VCS users can test the modules and see that they're working.

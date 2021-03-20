@@ -3,11 +3,6 @@ Serverity: info
 Description: Python Command Execution Detector
 Author: We All Created It <3.
 '''
-
-'''
-..*\.(system)\(.*\)
-'''
-
 import re
 
 detectVariables = [

@@ -42,6 +42,8 @@ def phpStart(filePath , phpScripts):
                     codeLine = outputMessage[2]
                     Message = outputMessage[3]
 
+                    codeLine = codeLine.replace('COMMA' , ',')
+
                     showIssue(Serverity=Serverity , lineCount=lineCount , Line=codeLine , Message=Message , filePath=filePath)
                 else:
                     processLines = processOutput.split('\n')

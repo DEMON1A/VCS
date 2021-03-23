@@ -98,6 +98,7 @@ python3 vCode.py -f code.py
 - Ruby Kernal File Open Remote Code Execution Based On Both String Comparing and ReGex.
 - Configurations File To Use Your Own Options That Includes Using PHP Modules and Send Discord Messages.
 - Discord Notifications Support Using Webhooks To Save VCS Hits.
+- Subfolder Support For Directory Option Increases The Scanning Area.
 
 ## Security
 - You're responsible for the files inside your disk. code injections are possible if an attacker is able to add a malicious python/php file inside your modules folder. we can't do anything to avoid that since this's how the program is working. otherwise. VCS is using a secure functions and multiple layers of validation befoe doing anything important. and all of the tests inside the tests folder is meant to be vulnerable so VCS users can test the modules and see that they're working.

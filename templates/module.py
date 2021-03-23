@@ -1,14 +1,11 @@
 '''
-:import any python module you want.
+Serverity: 
+Description: 
+Author: 
 '''
 
-detectVariables = [
-    '',
-    ''
-]
-
+detectVariables = ['']
 blockedVariables = ['']
-
 linesCount = 0
 
 from utils.showIssue import showIssue
@@ -22,7 +19,7 @@ def vScan(filePath):
         singleLine = singleLine.rstrip('\n')
 
         '''
-        your scan code here
+        scan code here
         '''
 
     linesCount = 0

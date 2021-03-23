@@ -41,11 +41,11 @@ def mainFunction(Options):
                 for singleDir in dirOptions:
                     dirFiles = listFiles(singleDir)
                     for singleFile in dirFiles:
-                        scannerBase(filePath=f"{singleDir}/{singleFile}" , Language=__OPTIONS__['language'])
+                        scannerBase(filePath=f"{singleFile}" , Language=__OPTIONS__['language'])
             else:
                 dirFiles = listFiles(dirOptions)
                 for singleFile in dirFiles:
-                    scannerBase(filePath=f"{dirOptions}/{singleFile}" , Language=__OPTIONS__['language'])
+                    scannerBase(filePath=f"{singleFile}" , Language=__OPTIONS__['language'])
     except Exception as e:
         printlnStr(e)
 

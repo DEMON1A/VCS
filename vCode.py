@@ -28,7 +28,7 @@ def mainFunction(Options):
 
             if type(fileOptions) == list:
                 for singleFile in fileOptions:
-                    scannerBase(filePath=singleFile)
+                    scannerBase(filePath=singleFile , Language=__OPTIONS__['language'])
             elif not fileOptions:
                 exit()
             else:

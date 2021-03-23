@@ -1,10 +1,12 @@
 from os import listdir
+from settings import USE_PHP_SCANS
+
 from scanner.scansStarter import startScan
 from scanner.phpStarter import phpStart
 
 from utils.showMessage import showError
 
-languagesList = ['python' , 'php' , 'nodejs']
+languagesList = ['python' , 'php' , 'nodejs' , 'ruby']
 
 def scannerBase(filePath , Language):
     if Language == "all":
@@ -40,4 +42,4 @@ def scannerBase(filePath , Language):
             exit()
 
     startScan(filePath=filePath , Modules=__MODULES__)
-    phpStart(filePath=filePath , phpScripts=__PHP_MODULES__)
+    if USE_PHP_SCANS: phpStart(filePath=filePath , phpScripts=__PHP_MODULES__)

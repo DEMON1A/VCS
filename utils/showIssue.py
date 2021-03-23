@@ -3,6 +3,7 @@ from termcolor import colored
 from datetime import datetime
 
 from utils.showMessage import showError
+from utils.discordSender import sendMessage
 
 def detectColor(Serverity):
     if Serverity.lower() == "high":
@@ -48,4 +49,8 @@ def showIssue(Serverity , lineCount , Line , Message , filePath):
     lineHeader = lineHeader + codeColor
 
     finalMessage = f"{headLine}\n{dateHeader}:{serverityHeader}: {messageHeader} \t{lineCountHeader}\n{lineHeader}\n{headLine}\n\n"
+
+    discordMessage = f"VCS did found a new hit :eyes:\n\n\n:cyclone: Serverity: {Serverity}\n:zap: Title: {Message}\n:feet: Path: {realPath}\n:mag_right: Line: {str(lineCount)}\n\n\n:date: Date: {dateString}\n:syringe: Code: `{Line}`\n\n\n"
+    sendMessage(Message=discordMessage)
+
     print(finalMessage)

@@ -105,5 +105,5 @@ python3 vCode.py -f code.py
 
 - If you believe you found a security issue on VCS feel free to contact me via the contact information on my github account. or you can open an issue on github with it.
 
-### Found VCS Helpful? :heartbeat:
-- Giving it a Star :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available to public** :heart: 
+## Found VCS Helpful? :heartbeat:
+- Giving it a :star: will be great. and i will be really thankful for that. otherwise, you can support us via the sponser links on the repository to keep VCS working and **available to public** :heart:

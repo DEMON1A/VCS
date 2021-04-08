@@ -23,6 +23,10 @@ $secretsList = array(
     "AUTHORIZE_TOKEN",
     "SECRET_KEY",
     "SECRET_TOKEN",
+    "SSH_KEY",
+    "PRIVATE_KEY",
+    "DISCORD_WEBHOOK",
+    "DISCORD_TOKEN",
 );
 
 while (( !feof($fileLines) )) {

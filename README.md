@@ -38,7 +38,7 @@ python3 vCode.py -f code.py
 
 ## What Vulnerabilities VCS is Scanning? :confused:
 #### Python:
-- Insecure YAML desearilization **[high]**
+- Insecure YAML deserialization **[high]**
 - Flask Enabled Debug Mode **[medium]**
 - Sqlite3 SQL Injection **[high]**
 - Command Injection With OS/exec **[high]**
@@ -51,7 +51,7 @@ python3 vCode.py -f code.py
 - Hardcoded Secrets **[high]**
 
 #### Ruby:
-- Insecure YAML desearilization **[high]**
+- Insecure YAML deserialization **[high]**
 - Ruby Open File Remote Code Execution **[high]**
 - Hardcoded Secrets **[high]**
 
@@ -68,7 +68,7 @@ python3 vCode.py -f code.py
 ![javascript](https://github.com/abranhe/programming-languages-logos/blob/master/src/javascript/javascript_32x32.png?raw=true)
 
 ## Did VCS Found a Real Issue Before Huh? :yawning_face:
-- Yeah It Did, I Was Able To Find Arbitrary Code Execution On SimBA After Manually Checking VCS Hits. VCS Did Point That There's an Insecure YAML desearilization Happens On Code Using Unsafe Loader.
+- Yeah It Did, I Was Able To Find Arbitrary Code Execution On SimBA After Manually Checking VCS Hits. VCS Did Point That There's an Insecure YAML deserialization Happens On Code Using Unsafe Loader.
 
 ### References:
 - https://github.com/418sec/huntr/pull/1959

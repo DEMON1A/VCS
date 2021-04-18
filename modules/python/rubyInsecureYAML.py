@@ -9,8 +9,8 @@ detectVariables = []
 blockedVariables = ['']
 linesCount = 0
 
-detectYAMLPattern = r"^require..*(\'|\")yaml(\'|\")"
-insecureProcessingPattern = r"^YAML(\.|\:\:)load(..*)"
+detectYAMLPattern = r"require..*(\'|\")yaml(\'|\")"
+insecureProcessingPattern = r"YAML(\.|\:\:)load(..*)"
 
 from utils.showIssue import showIssue
 
